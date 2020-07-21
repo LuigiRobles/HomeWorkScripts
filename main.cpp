@@ -23,21 +23,23 @@ int main()
     cout << "Enter your choice (1 or 2): ";
     cin >> choice;
 
+    //if else statement
     if (choice < 1 || choice > 2)
         cout << "Invalid choice" << endl;
     else
     {
         cout << "Radius: ";
         cin >> radius;
+        // nested if else statement
         if (choice == 1)
         {
-            getArea(radius, answer);
-            cout << "Area: " << answer;
+            getArea(radius, answer); //function call
+            cout << "Area: " << answer;//output part of IPO
         }
         else
         {
-            getDiameter(radius, answer);
-            cout << "Diameter: " << answer;
+            getDiameter(radius, answer); //function call
+            cout << "Diameter: " << answer; //output part of IPO
         }   //end if
         cout << endl;
     }   //end if
